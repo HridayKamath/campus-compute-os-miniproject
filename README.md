@@ -327,15 +327,4 @@ a PASS/FAIL summary. The exit status is 0 when every check passes.
 | Leftover `campuscompute` entries in `/dev/shm` after Ctrl+C | `./campuscompute cleanup` (the `ipc` command also removes its own stale objects at startup) |
 | Output looks stale after editing the code | `make clean && make` |
 
-## 13. Assumptions and Limitations
 
-* Scheduling times are abstract time units, not real clock time, and the
-  scheduling algorithms are simulations on the job list. The job file limits
-  are listed in section 7.
-* Round Robin and Priority use the rules stated in section 8.
-* The logger writes to a fixed file, `campuscompute.log`, in the current directory.
-* IPC objects use fixed names starting with `campuscompute`, so two copies of
-  the program should not run the `ipc` command at the same time.
-* Worker failures are always simulated; no real fault is injected.
-* The CPU-limit demo takes about one second because the child must actually
-  consume one second of CPU time.
