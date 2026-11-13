@@ -23,7 +23,6 @@ Operating Systems (UE25CS242A) - Level 3 Mini-Project, PES University
 10. [Cleanup](#10-cleanup)
 11. [Testing](#11-testing)
 12. [Troubleshooting](#12-troubleshooting)
-13. [Assumptions and Limitations](#13-assumptions-and-limitations)
 
 ## 1. Overview
 
